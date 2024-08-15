@@ -1,0 +1,58 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.status {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.status button {
+    font-size: 3rem;
+    color: lightgrey;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.status button:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+.actionbtn.show {
+    display: flex;
+}
+
+.status.show {
+    display: flex;
+}
